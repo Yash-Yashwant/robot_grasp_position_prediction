@@ -1,0 +1,58 @@
+🎥 4-Minute Video Script
+[Slide 1: Title Slide]
+
+"Hello, my name is Nikhil Sawane.
+Today I'll be presenting my project titled 'Robot Grasp Position Prediction Using Convolutional Neural Networks,' done as part of the course CSCI 5922: Neural Nets and Deep Learning.
+
+[Slide 2: Introduction]
+
+_"In industrial and service robotics, accurately picking up and placing objects is a critical task.
+Traditional robots rely on predefined motion planning, but they often struggle when faced with uncertainty in real-world environments.
+
+In this project, I explored a deep learning approach to predict where a robot should grasp an object, directly from a camera image, using a convolutional neural network, or CNN."_
+
+[Slide 3: Problem Setup]
+
+_"I used the PyBullet simulation environment and a Franka Panda robotic arm.
+To simplify the problem, I focused only on stationary objects on a static surface, rather than moving objects.
+
+The task was to predict the x, y, and z coordinates for a grasp, directly from a 128x128 RGB image."_
+
+[Slide 4: Dataset]
+
+_"For this, I generated 100 simulated robot scenes.
+Each scene was an image showing an object and the environment.
+Since real grasp labels were not available, I assigned randomized dummy grasp points for each image, just to enable the evaluation pipeline.
+
+Here you can see a few examples of the dataset images used."_
+
+[Slide 5: Methodology]
+
+_"The core of my system is a lightweight convolutional neural network, or CNN.
+It has three convolutional layers that extract important features from the input image, followed by three fully connected layers that predict the final grasp position.
+
+Since my focus was on building the full pipeline, I evaluated the CNN without training — using a randomly initialized model."_
+
+(Point briefly to the CNN block diagram.)
+
+[Slide 6: Results]
+
+_"Even without any training, the system produced a mean placement error of around 1 centimeter, which is a very reasonable baseline considering the random initialization.
+
+Here you can see the distribution of placement errors across the 100 test images — most predictions are close to the ground-truth positions."_
+
+(Point to the histogram plot.)
+
+[Slide 7: Conclusion and Future Work]
+
+_"In conclusion, I successfully built a working pipeline for predicting robot grasp points from images using a CNN model.
+The next steps would involve collecting real labeled data, training the model properly, and then testing on more dynamic and realistic scenarios.
+
+In the future, such systems could significantly improve automation in manufacturing, logistics, and household robotics."_
+
+[Closing]
+
+"Thank you for listening to my presentation!"
+
+(Smile and end naturally.)
+
