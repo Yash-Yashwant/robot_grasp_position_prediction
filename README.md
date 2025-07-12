@@ -1,6 +1,6 @@
 # Robot Grasp Position Prediction Using Convolutional Neural Networks
 
-**Contributors:**  
+**Equal contribution. Listing order is random**  
 - Nikhil Sawane  
 - Yashwant Gandham
 
